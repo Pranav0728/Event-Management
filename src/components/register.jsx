@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import nodeApi from "../axiosConfig";
+import { CircleLoader } from "react-spinners"; // Importing CircleLoader from react-spinners
 
 const RegisterPage = () => {
   const [firstName, setFirstName] = useState("");
@@ -9,6 +10,7 @@ const RegisterPage = () => {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState(null);
   const [successMessage, setSuccessMessage] = useState(null);
+  const [loading, setLoading] = useState(false); // Loading state to track registration process
 
   const handleRegister = async (e) => {
     e.preventDefault();
@@ -25,13 +27,17 @@ const RegisterPage = () => {
       last_name: lastName,
     };
 
+    setLoading(true); // Set loading to true when registration starts
+
     try {
       const response = await nodeApi.post("/studentRegister", userData);  // Using the nodeApi instance
       console.log("Registration successful", response.data);
       setSuccessMessage("Registration successful! Now login");
+      setLoading(false); // Set loading to false after registration completes
     } catch (error) {
       console.error("Error registering:", error);
       setError(error.response ? error.response.data.message : "An error occurred");
+      setLoading(false); // Set loading to false if an error occurs
     }
   };
 
@@ -39,11 +45,11 @@ const RegisterPage = () => {
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
         <h2 className="text-3xl font-bold text-center text-green-600 mb-6">Register</h2>
-        
+
         {/* Error or success message display */}
         {error && <div className="text-red-500 text-center mb-4">{error}</div>}
         {successMessage && <div className="text-green-500 text-center mb-4">{successMessage}</div>}
-        
+
         <form onSubmit={handleRegister}>
           <div className="mb-4">
             <label htmlFor="firstName" className="block text-sm font-medium text-gray-700">
@@ -119,9 +125,16 @@ const RegisterPage = () => {
             />
           </div>
 
-          <button type="submit" className="w-full py-2 bg-green-600 text-white rounded-md hover:bg-green-500 focus:outline-none">
-            Register
-          </button>
+          {/* Show loading spinner while submitting */}
+          {loading ? (
+            <div className="flex justify-center">
+              <CircleLoader color="#10B981" size={50} />
+            </div>
+          ) : (
+            <button type="submit" className="w-full py-2 bg-green-600 text-white rounded-md hover:bg-green-500 focus:outline-none">
+              Register
+            </button>
+          )}
 
           <div className="mt-4 text-center">
             <p className="text-sm">

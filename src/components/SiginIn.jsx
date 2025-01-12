@@ -1,41 +1,47 @@
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom"; // Correctly import Link from react-router-dom
 import nodeApi from "../axiosConfig"; // Make sure nodeApi is correctly set up
+import { CircleLoader } from "react-spinners"; // Importing CircleLoader from react-spinners
 
 const SignInPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false); // State to track loading status
 
   const navigate = useNavigate();
 
   const handleSignIn = async (e) => {
     e.preventDefault();
     setError(""); // Reset any previous error
+    setLoading(true); // Set loading to true when starting the request
 
     try {
       // Send request to backend to check login credentials
       const response = await nodeApi.post("/studentLogin", {
         email_id: email,
         password: password,
-        
       });   
-      console.log(response)
+      console.log(response);
+      setLoading(false); // Set loading to false when request completes
+
       if (response.status === 200) {
-        const { firstName, role,student_id } = response.data;
+        const { firstName, role, student_id } = response.data;
 
         // Save firstName and role to localStorage
         localStorage.setItem("student_id", student_id);
         localStorage.setItem("firstName", firstName);
         localStorage.setItem("role", role);
+        
         // Navigate based on role
-        if (role == true) {
+        if (role === true) {
           navigate("/admin");
         } else {
           navigate("/events");
         }
       }
     } catch (error) {
+      setLoading(false); // Set loading to false if an error occurs
       setError(error.response?.data?.message || "An error occurred. Please try again.");
     }
   };
@@ -77,9 +83,16 @@ const SignInPage = () => {
 
           {error && <p className="text-red-500 text-sm">{error}</p>}
 
-          <button type="submit" className="w-full py-2 bg-blue-600 text-white rounded-md hover:bg-blue-500 focus:outline-none">
-            Sign In
-          </button>
+          {/* Show loading spinner while submitting */}
+          {loading ? (
+            <div className="flex justify-center">
+              <CircleLoader color="#1D4ED8" size={50} />
+            </div>
+          ) : (
+            <button type="submit" className="w-full py-2 bg-blue-600 text-white rounded-md hover:bg-blue-500 focus:outline-none">
+              Sign In
+            </button>
+          )}
 
           <div className="mt-4 text-center">
             <p className="text-sm">
