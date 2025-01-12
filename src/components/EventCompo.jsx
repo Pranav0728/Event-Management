@@ -140,7 +140,7 @@ const EventCompo = () => {
                     {/* Event Details */}
                     {event.banner && (
                       <img
-                        src={`http://localhost:8000/${event.banner}`}
+                        src={`backendeventurl.vercel.app/${event.banner}`}
                         alt="Event Banner"
                         className="w-full h-48 object-cover rounded-md mb-4"
                       />
