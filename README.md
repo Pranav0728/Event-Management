@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# College Placement Event Management
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a full-stack web application for managing college placement events. It allows students to sign up, log in, and register for events, while the admin can create and manage events. The application is built using React, Node.js, Tailwind CSS, and a SQL-based relational database.
 
-## Available Scripts
+## Tools and Technologies Used
 
-In the project directory, you can run:
+- **Frontend**: 
+  - **React**: JavaScript library for building user interfaces.
+  - **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
 
-### `npm start`
+- **Backend**:
+  - **Node.js**: JavaScript runtime built on Chrome's V8 engine.
+  - **Express.js**: Web framework for Node.js.
+  - **MySQL**: Relational database management system (RDBMS) for storing event and user data.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Database**:
+  - **SQL Database (MySQL)**: Relational database schema to manage users, roles, and events.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Repository**:
+  - **Frontend**: [Github](https://github.com/Pranav0728/Event-Management).
+  - **Backend**: [Github](https://github.com/Pranav0728/Event-Management-Backend).
+  
+## Deployment
 
-### `npm test`
+- **Frontend**: The frontend of the application is deployed on [Vercel](clgeventmanagement.vercel.app). Click [here](clgeventmanagement.vercel.app) to access the deployed version.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Backend**: The backend is also deployed on [Vercel](https://event-management-backend-five.vercel.app). You can access the API and test different functionalities.
 
-### `npm run build`
+## Landing Page
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Once you access the deployed application, you will land on the **Landing Page**. Below is a screenshot of the landing page:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Landing Page Screenshot](path/to/your/landing-page-screenshot.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Features
 
-### `npm run eject`
+- **Student Registration**: Students can register by providing their details like email, name, and password.
+- **Student Login**: Students can log in with their credentials to access and participate in events.
+- **Event Management**: Admins can create and manage different events (e.g., Tech Talks, Workshops, etc.).
+- **Role-based Access**: Different views and features for students and admins based on their roles.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## How to Run Locally
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 1. Clone the Repository
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+git clone https://github.com/your-github-username/college-placement-event.git
+cd college-placement-event
