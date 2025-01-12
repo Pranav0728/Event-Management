@@ -22,7 +22,7 @@ This is a full-stack web application for managing college placement events. It a
   
 ## Deployment
 
-- **Frontend**: The frontend of the application is deployed on [Vercel](clgeventmanagement.vercel.app). Click [here](clgeventmanagement.vercel.app) to access the deployed version.
+- **Frontend**: The frontend of the application is deployed on [https://clgeventmanagement.vercel.app](https://clgeventmanagement.vercel.app). Click [here](https://clgeventmanagement.vercel.app/) to access the deployed version.
 
 - **Backend**: The backend is also deployed on [Vercel](https://event-management-backend-five.vercel.app). You can access the API and test different functionalities.
 
@@ -30,7 +30,7 @@ This is a full-stack web application for managing college placement events. It a
 
 Once you access the deployed application, you will land on the **Landing Page**. Below is a screenshot of the landing page:
 
-![Landing Page Screenshot](path/to/your/landing-page-screenshot.png)
+![Landing Page Screenshot](https://github.com/Pranav0728/Event-Management)
 
 ## Features
 
