@@ -30,19 +30,17 @@ This is a full-stack web application for managing college placement events. It a
 
 Once you access the deployed application, you will land on the **Landing Page**. Below is a screenshot of the landing page:
 
-![Landing Page Screenshot](https://github.com/Pranav0728/Event-Management)
+![Landing Page Screenshot](https://github.com/Pranav0728/Event-Management/sample_images/1.png)
+![Landing Page Screenshot](https://github.com/Pranav0728/Event-Management/sample_images/2.png)
+![Landing Page Screenshot](https://github.com/Pranav0728/Event-Management/sample_images/3.png)
+![Landing Page Screenshot](https://github.com/Pranav0728/Event-Management/sample_images/4.png)
+![Landing Page Screenshot](https://github.com/Pranav0728/Event-Management/sample_images/5.png)
+![Landing Page Screenshot](https://github.com/Pranav0728/Event-Management/sample_images/6.png)
+![Landing Page Screenshot](https://github.com/Pranav0728/Event-Management/sample_images/7.png)
+![Landing Page Screenshot](https://github.com/Pranav0728/Event-Management/sample_images/8.png)
+![Landing Page Screenshot](https://github.com/Pranav0728/Event-Management/sample_images/9.png)
+![Landing Page Screenshot](https://github.com/Pranav0728/Event-Management/sample_images/10.png)
+![Landing Page Screenshot](https://github.com/Pranav0728/Event-Management/sample_images/11.png)
+![Landing Page Screenshot](https://github.com/Pranav0728/Event-Management/sample_images/12.png)
+![Landing Page Screenshot](https://github.com/Pranav0728/Event-Management/sample_images/13.png)
 
-## Features
-
-- **Student Registration**: Students can register by providing their details like email, name, and password.
-- **Student Login**: Students can log in with their credentials to access and participate in events.
-- **Event Management**: Admins can create and manage different events (e.g., Tech Talks, Workshops, etc.).
-- **Role-based Access**: Different views and features for students and admins based on their roles.
-
-## How to Run Locally
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/your-github-username/college-placement-event.git
-cd college-placement-event
