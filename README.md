@@ -42,5 +42,5 @@ Once you access the deployed application, you will land on the **Landing Page**.
 ![Landing Page Screenshot](https://github.com/Pranav0728/Event-Management/sample_images/10.png)
 ![Landing Page Screenshot](https://github.com/Pranav0728/Event-Management/sample_images/11.png)
 ![Landing Page Screenshot](https://github.com/Pranav0728/Event-Management/sample_images/12.png)
-![Landing Page Screenshot](https://github.com/Pranav0728/Event-Management/sample_images/13.png)
+![Landing Page Screenshot](https://github.com/Pranav0728/Event-Management/blob/main/sample_images/13.png)
 
