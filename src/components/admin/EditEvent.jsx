@@ -406,15 +406,6 @@ function EditEventForm() {
           />
         </div>
 
-        <div className="flex items-center">
-          <label className="w-1/3 font-semibold">Banner:</label>
-          <input
-            type="file"
-            name="banner"
-            onChange={handleChange}
-            className="w-2/3 p-2 rounded-lg bg-gray-100 text-black border border-gray-300 focus:border-blue-400"
-          />
-        </div>
             <div className="flex items-center">
           <label className="w-1/3 font-semibold">Is the event Online?</label>
           <div className="flex w-2/3 border border-gray-300 p-4 rounded-lg">

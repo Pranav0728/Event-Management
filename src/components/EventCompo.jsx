@@ -137,14 +137,11 @@ const EventCompo = () => {
                   </div>
 
                   <div className="mt-2">
-                    {/* Event Details */}
-                    {event.banner && (
                       <img
                         src={`/banner.png`}
                         alt="Event Banner"
                         className="w-full h-48 object-cover rounded-md mb-4"
                       />
-                    )}
                     <p>
                       <strong>Speaker:</strong> {event.nameOfSpeaker}
                     </p>
