@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const nodeApi = axios.create({
-  baseURL: 'event-management-backend-production-82d3.up.railway.app',
+  baseURL: 'https://event-management-backend-five.vercel.app',
 });
 
-export default nodeApi;
+export default nodeApi; 
