@@ -1,6 +1,6 @@
 # College Placement Event Management
 
-This is a full-stack web application for managing college placement events. It allows students to sign up, log in, and register for events, while the admin can create and manage events. The application is built using React, Node.js, Tailwind CSS, and a SQL-based relational database.
+This is a full-stack web application for managing college placement events. It allows students to sign up, log in, and register for events, while the admin can create and manage events. The application is built using React, Node.js, Tailwind CSS, and a SQL relational database.
 
 ## Tools and Technologies Used
 
